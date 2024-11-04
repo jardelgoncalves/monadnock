@@ -1,4 +1,4 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  presets: [require("@monadnock/config-tailwind")],
+  presets: [require("@jardelgoncalves/monadnock-config-tailwind")],
 };

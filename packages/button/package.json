@@ -1,5 +1,5 @@
 {
-  "name": "@monadnock/button",
+  "name": "@jardelgoncalves/monadnock-button",
   "version": "1.0.0",
   "description": "Now I’m the model of a modern major general / The venerated Virginian veteran whose men are all / Lining up, to put me up on a pedestal / Writin’ letters to relatives / Embellishin’ my elegance and eloquence / But the elephant is in the room / The truth is in ya face when ya hear the British cannons go / BOOM",
   "keywords": [],
@@ -21,19 +21,20 @@
   "scripts": {
     "build": "vite build && tsc --project tsconfig.build.json --declaration --emitDeclarationOnly --outDir dist"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/",
+    "access": "public"
+  },
   "files": [
     "dist/**"
   ],
-  "publishConfig": {
-    "access": "public"
-  },
   "peerDependencies": {
     "react": "16.0.0 || 17.0.0 || 18.0.0",
     "react-dom": "16.0.0 || 17.0.0 || 18.0.0"
   },
   "devDependencies": {
-    "@monadnock/config-tailwind": "file:../config-tailwind",
-    "@monadnock/config-tsconfig": "file:../config-tsconfig",
+    "@jardelgoncalves/monadnock-config-tailwind": "file:../config-tailwind",
+    "@jardelgoncalves/monadnock-config-tsconfig": "file:../config-tsconfig",
     "@types/node": "^22.8.7",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",

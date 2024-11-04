@@ -1,5 +1,5 @@
 {
-  "name": "@monadnock/config-tailwind",
+  "name": "@jardelgoncalves/monadnock-config-tailwind",
   "version": "0.0.0",
   "private": false,
   "main": "index.js",
