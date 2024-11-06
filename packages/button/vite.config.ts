@@ -1,5 +1,6 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
+import path from "path";
 
 export default defineConfig({
   build: {
@@ -12,6 +13,12 @@ export default defineConfig({
     },
     sourcemap: true,
     target: "es2020",
+  },
+  css: {
+    modules: {
+      generateScopedName: "[local]_[hash:base64:5]", // Geração do nome das classes CSS
+    },
+    postcss: path.resolve(__dirname, "./postcss.config.js"),
   },
   plugins: [react()],
   publicDir: false,

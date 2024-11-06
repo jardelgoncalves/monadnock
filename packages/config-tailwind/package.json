@@ -2,6 +2,24 @@
   "name": "@jardelgoncalves/monadnock-config-tailwind",
   "version": "0.0.0",
   "private": false,
-  "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "build": "vite build && tsc --project tsconfig.build.json --declaration --emitDeclarationOnly --outDir dist"
+  },
+  "exports": {
+    "./src": "./src/index.ts",
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/monadnock-config-tailwind.cjs",
+      "import": "./dist/monadnock-config-tailwind.js"
+    }
+  },
+  "main": "./dist/monadnock-config-tailwind.js",
+  "typings": "./dist/monadnock-config-tailwind.d.ts",
+  "module": "./dist/monadnock-config-tailwind.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "devDependencies": {
+    "tailwindcss": "^3.4.14"
+  }
 }

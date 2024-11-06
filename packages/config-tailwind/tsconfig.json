@@ -1,0 +1,5 @@
+{
+  "extends": "@jardelgoncalves/monadnock-config-tsconfig/node16.json",
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "exclude": ["dist", "build", "node_modules"]
+}

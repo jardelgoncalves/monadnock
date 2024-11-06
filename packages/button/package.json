@@ -1,6 +1,6 @@
 {
   "name": "@jardelgoncalves/monadnock-button",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "Now I’m the model of a modern major general / The venerated Virginian veteran whose men are all / Lining up, to put me up on a pedestal / Writin’ letters to relatives / Embellishin’ my elegance and eloquence / But the elephant is in the room / The truth is in ya face when ya hear the British cannons go / BOOM",
   "keywords": [],
   "author": "Jardel Gonçalves <jardelgoncalves.dev@gmail.com>",
@@ -8,15 +8,15 @@
   "exports": {
     "./src": "./src/index.ts",
     ".": {
-      "types": "./dist/button.d.ts",
-      "require": "./dist/button.cjs",
-      "import": "./dist/button.js"
+      "types": "./dist/index.d.ts",
+      "require": "./dist/monadnock-button.cjs",
+      "import": "./dist/monadnock-button.js"
     }
   },
-  "main": "./dist/button.js",
-  "typings": "./dist/button.d.ts",
-  "module": "./dist/button.js",
-  "types": "./dist/button.d.ts",
+  "main": "./dist/monadnock-button.js",
+  "typings": "./dist/monadnock-button.d.ts",
+  "module": "./dist/monadnock-button.js",
+  "types": "./dist/index.d.ts",
   "type": "module",
   "scripts": {
     "build": "vite build && tsc --project tsconfig.build.json --declaration --emitDeclarationOnly --outDir dist"
@@ -45,6 +45,7 @@
     "react-dom": "^18.3.1",
     "tailwindcss": "^3.4.14",
     "typescript": "^5.6.3",
+    "typescript-plugin-css-modules": "^5.1.0",
     "vite": "^5.4.10"
   }
 }
