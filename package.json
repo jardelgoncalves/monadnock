@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "build": "lerna run build",
+    "generate": "lerna run generate",
     "add-changeset": "changeset add",
     "version-packages": "changeset version",
     "prerelease": "npm run build",

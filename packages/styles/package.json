@@ -1,0 +1,29 @@
+{
+  "name": "@jardelgoncalves/monadnock-styles",
+  "version": "1.0.0",
+  "description": "Now I’m the model of a modern major general / The venerated Virginian veteran whose men are all / Lining up, to put me up on a pedestal / Writin’ letters to relatives / Embellishin’ my elegance and eloquence / But the elephant is in the room / The truth is in ya face when ya hear the British cannons go / BOOM",
+  "keywords": [],
+  "author": "Jardel Gonçalves <jardelgoncalves.dev@gmail.com>",
+  "license": "ISC",
+  "type": "module",
+  "scripts": {
+    "generate": "vite build"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/",
+    "access": "public"
+  },
+  "files": [
+    "dist/**"
+  ],
+  "devDependencies": {
+    "@jardelgoncalves/monadnock-config-tailwind": "file:../config-tailwind",
+    "@jardelgoncalves/monadnock-config-tsconfig": "file:../config-tsconfig",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.14",
+    "typescript": "^5.6.3",
+    "typescript-plugin-css-modules": "^5.1.0",
+    "vite": "^5.4.10"
+  }
+}
